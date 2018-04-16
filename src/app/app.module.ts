@@ -3,16 +3,16 @@ import { NgModule, ApplicationRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
+import { Component1Component } from './component1/component1.component';
+import { Component2Component } from './component2/component2.component';
 
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent
+    Component1Component,
+    Component2Component
   ],
   imports: [
     BrowserModule,
