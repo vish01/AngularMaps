@@ -1,3 +1,6 @@
+p { font-weight: bold; }
+div { color: black; }
+
 .container {
   display: grid;
   grid-template-columns: 50% auto;
