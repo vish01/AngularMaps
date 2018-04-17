@@ -9,4 +9,12 @@ export class AppComponent {
   title: string = 'Fetching Google Maps API';
   lat: number = 41.637639;
   lng: number = -70.9290092;
+
+  itemCount: number = 4;
+  btnText: string = 'Add an Item';
+  
+  constructor() { }
+
+  ngOnInit() {
+  }
 }
