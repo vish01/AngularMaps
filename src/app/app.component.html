@@ -1,10 +1,9 @@
 <h1>{{ title }}</h1>
-<h2> One way data binding: </h2>
-<input type="submit" class="btn" [value]="btnText">
+<h2> Two way data binding: </h2>
+<input type="text" class="txt" name="item" placeholder="What is your Life goal?" [(ngModel)]="goal">
+
+<br><span>{{ goal }}</span><br>
 <p>Your bucket list ({{ itemCount }})</p>
-
-<h2>Two way data binding</h2>
-
 
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->

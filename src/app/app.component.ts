@@ -10,8 +10,9 @@ export class AppComponent {
   lat: number = 41.637639;
   lng: number = -70.9290092;
 
-  itemCount: number = 4;
+  itemCount: number = 2;
   btnText: string = 'Add an Item';
+  goalText: string = 'My first life goal';
   
   constructor() { }
 
