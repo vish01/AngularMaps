@@ -1,6 +1,9 @@
-# Myapp
+# AngularMaps
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+
+Run "<b>npm install</b>" in the directory to install all dependencies.
+After that, run "<b>run npm install @agm/core --save </b>" to install maps library.
 
 ## Development server
 
