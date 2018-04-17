@@ -1,8 +1,8 @@
-<h1>{{ title }}</h1>
+<h1>We will be {{ title1 }} as well as {{title2}}</h1>
 <h2> Two way data binding: </h2>
 <input type="text" class="txt" name="item" placeholder="What is your Life goal?" [(ngModel)]="goal">
 
-<br><span>{{ goal }}</span><br>
+<br><span>Your Life Goal is :{{ goal }}</span><br>
 <p>Your bucket list ({{ itemCount }})</p>
 
 <!-- this creates a google map on the page with the given lat/lng from -->
