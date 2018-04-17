@@ -1,10 +1,35 @@
 <h1>We will be {{ title1 }} as well as {{title2}}</h1>
-<h2> Two way data binding: </h2>
-<input type="text" class="txt" name="item" placeholder="What is your Life goal?" [(ngModel)]="goal">
 
+<div class="container color-dark">
+  <div class="col">
+<h2> Two way data binding: </h2>
+<p>Add a bucket list item</p>
+  </div>
+  <div class="col">
+    <p>Your bucket list</p>
+  </div>
+</div>
+<div class="container color-light">
+  <div class="col">
+    <form>
+<input type="text" class="txt" name="item" placeholder="What is your Life goal?" [(ngModel)]="goal">
+<br>
 <br><span>Your Life Goal is :{{ goal }}</span><br>
+<br>
+<input type="submit" class="btn" value="{{ btnText }}" (click)="addItem()">
+</form>
+
 <p>Your bucket list ({{ itemCount }})</p>
 
+<h2>Displaying the array of the Goal List:</h2>
+<div class="col">
+    <p class="life-container" *ngFor="let goal of goals">
+        {{ goal }}
+      </p>
+</div>
+</div>
+</div>
+<h2>Fetching Google Maps API:</h2>
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
 <agm-map [latitude]="lat" [longitude]="lng">
